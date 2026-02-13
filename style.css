@@ -1,0 +1,57 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f0f0f0;
+font-family: sans-serif;
+
+}
+
+.hidden {
+    display: none !important; 
+}
+
+.captcha-box {
+    border: 1px solid #d3d3d3;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.checkbox-container input {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+#step-2 h1 {
+    color: #e91e63; /* Un rose Saint-Valentin */
+}
+
+#btn-non {
+    transition: all 0.3s ease-out;
+}
+
+#victory-gif {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 10px 20px rgba(233, 30, 99, 0.2);
+}
+
+.victory-title {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

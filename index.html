@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- ÉTAPE 1 : Le faux CAPTCHA -->
+        <div id="step-1">
+            <div class="captcha-box">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="captcha-check">
+                    <span class="checkmark"></span>
+                </div>
+                <label for="captcha-check">Je ne suis pas un robot</label>
+                <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="logo" width="30">
+            </div>
+        </div>
+    
+        <!-- ÉTAPE 2 : La vraie question (cachée au début) -->
+        <div id="step-2" class="hidden">
+            <h1>Vérification réussie !</h1>
+            <p>Voulez-vous être ma Valentine ?</p>
+            <div class="buttons">
+                <button id="btn-oui">Oui ! ❤️</button>
+                <button id="btn-non">Non</button>
+            </div>
+
+            
+        </div>
+
+        <div id="step-3" class="hidden">
+            <h1 class="victory-title">Love u babe ❤️</h1>
+            <div id="reward-container">
+                <!-- On utilise un GIF rigolo -->
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2s0a2F5aDg4ZDRxbXA3dTJxNHo1MTU2bmM3YjI0OHM3NmRpZ29kZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LQF7QwdaoUOFhWBb0b/giphy.gif" alt="Joie" id="victory-gif">
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
